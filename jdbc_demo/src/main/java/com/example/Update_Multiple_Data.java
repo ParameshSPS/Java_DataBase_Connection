@@ -5,7 +5,7 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 
 // Insert Multiple Data
-public class Update_Data_1 {
+public class Update_Multiple_Data {
     public static void main(String[] args) {
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
