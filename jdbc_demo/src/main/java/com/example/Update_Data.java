@@ -5,7 +5,7 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
-// Insert Data
+// Update Data
 public class Update_Data {
     public static void main(String[] args) {
         try {
@@ -17,7 +17,8 @@ public class Update_Data {
             String query = "UPDATE emp_details " + "SET Phone_No = ? " + "WHERE Name = ?";
             PreparedStatement ps = con.prepareStatement(query);
 
-            ps.setInt(1, 1000000000);
+            // Update single column
+            ps.setInt(1, 916006535);
             ps.setString(2, "Padma");
 
             ps.executeUpdate();

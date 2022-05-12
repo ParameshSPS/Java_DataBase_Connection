@@ -16,12 +16,13 @@ public class Update_Multiple_Data {
             String query = "UPDATE emp_details " + "SET Phone_No = ? " + "WHERE emp_id = ?";
             PreparedStatement ps = con.prepareStatement(query);
 
-            ps.setLong(1, 887645423);
+            // Update Multiple Column
+            ps.setLong(1, 887645042);
             ps.setInt(2, 2);
 
             ps.addBatch();
 
-            ps.setInt(1, 0000000);
+            ps.setDouble(1, 916000653);
             ps.setInt(2, 3);
 
             ps.addBatch();
@@ -42,7 +43,6 @@ public class Update_Multiple_Data {
         } catch (Exception e) { 
             e.printStackTrace();
         }
-
         System.out.println("Macha Update Successfull");
     }
 }
